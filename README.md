@@ -15,8 +15,8 @@ SDK2 の VRCSDK2 VRC_AvatarDescriptor が付与されているオブジェクト
 移行後は SDK2 の VRC_AvatarDescriptor は不要になりますので削除していただいて結構です。  
 ただし、間違って SDK3 の VRC Avatar Descriptor を削除しないように気をつけてください。  
 
-ただし、 "VRCAvatars3Tools" は Unity 2022.3 ではそのままでは使用できないことを確認しています。  
-詳細は 注意点 に書いておりますのでご確認ください。
+なお、  "VRCAvatars3Tools" は Unity 2022.3 ではそのままでは使用できないことを確認しています。  
+対応方法等の詳細は 注意点 に書いておりますのでご確認ください。
 
 ## 注意点
 ### これはニセモノであることを忘れないでください。
