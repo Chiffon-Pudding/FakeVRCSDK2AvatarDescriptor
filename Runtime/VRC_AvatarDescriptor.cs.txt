@@ -2,7 +2,7 @@
  *
  * The Fake of VRCSDK2 VRC_AvatarDescriptor.
  *
- * These codes are licensed under CC0.
+ * These codes are licensed under CC0-1.0.
  * http://creativecommons.org/publicdomain/zero/1.0/deed.ja
  *
  *
