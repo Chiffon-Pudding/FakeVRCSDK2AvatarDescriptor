@@ -66,15 +66,19 @@ Unity にこのパッケージが導入されている時、 dll のソースコ
 ↓複製
 /Assets/FakeVRCSDK2AvatarDescriptor/Runtime/VRC_AvatarDescriptor.cs
 
-Unity の画面に戻ると、 Unity によって自動でビルドが行われ、ビルドされた .dll は以下の場所に格納されます。
+Unity からアセンブリ定義ファイルを生成します。
+/Assets/FakeVRCSDK2AvatarDescriptor/Runtime/VRC_AvatarDescriptor.asmdf
+
+Unity によって自動でビルドが行われ、ビルドされた .dll は以下の場所に格納されます。
 /Library/ScriptAssemblies/VRC_AvatarDescriptor.dll
 ビルドされた dll をコピーして、
 /Assets/FakeVRCSDK2AvatarDescriptor/Runtime/
 にペーストします。
 /Assets/FakeVRCSDK2AvatarDescriptor/Runtime/VRC_AvatarDescriptor.dll
 
-.cs と .dll は共存できないため、名前を変えてビルドした .cs を削除します。
+.cs & .asmdf と .dll は共存できないため、名前を変えてビルドした .cs と先程作成したアセンブリ定義 .asmdf を削除します。
 /Assets/FakeVRCSDK2AvatarDescriptor/Runtime/VRC_AvatarDescriptor.cs
+/Assets/FakeVRCSDK2AvatarDescriptor/Runtime/VRC_AvatarDescriptor.asmdf
 ↓
 削除
 
