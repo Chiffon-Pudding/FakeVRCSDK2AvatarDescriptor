@@ -1,0 +1,21 @@
+{
+  "name": "bower.tinysidhe.FakeVRCSDK2AvatarDescriptor",
+  "displayName": "Fake_VRCSDK2_VRC_AvatarDescriptor",
+  "version": "0.0.1",
+  "author": {
+    "name": "ChiffonPudding",
+    "email": "chiffonpudding@airmail.cc",
+    "url": "https://misskey.furry-r-moonrabbitbower.com/@chiffon"
+  },
+  "unity" : "2022.3",
+  "description": "The Fake of VRChat SDK2 VRC_AvatarDescriptor.",
+  "gitDependencies": {},
+  "vpmDependencies": {},
+  "license": "CC0-1.0",
+  "legacyFolders": {},
+  "legacyFiles": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chiffon-Pudding/FakeVRCSDK2AvatarDescriptor/tree/main"
+  }
+}
