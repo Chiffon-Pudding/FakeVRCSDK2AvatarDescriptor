@@ -2,7 +2,7 @@
 VRCSDK2 VRC_AvatarDescriptorEditor の「ニセモノ」です。
 
 ## ライセンス
-CC0
+CC0-1.0  
 http://creativecommons.org/publicdomain/zero/1.0/deed.ja
 
 ## 使い方
