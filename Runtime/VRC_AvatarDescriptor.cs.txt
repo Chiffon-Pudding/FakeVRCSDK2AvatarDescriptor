@@ -1,0 +1,64 @@
+/*
+ *
+ * The Fake of VRCSDK2 VRC_AvatarDescriptor.
+ *
+ * These codes are licensed under CC0.
+ * http://creativecommons.org/publicdomain/zero/1.0/deed.ja
+ *
+ *
+ * To use this script, you need to build it in dll format
+ * and specify "f78c4655b33cb5741983dc02e08899cf" as the dll's guid.
+ *
+ */
+
+#if !VRC_SDK_VRCSDK2
+
+using UnityEngine;
+using System;
+
+namespace VRCSDK2
+{
+    /// <summary>
+    /// The Fake of VRCSDK2 VRC_AvatarDescriptor.
+    /// </summary>
+    [DisallowMultipleComponent]
+    [Serializable]
+    public class VRC_AvatarDescriptor : MonoBehaviour
+    {
+        public string Name;
+        public Vector3 ViewPosition;
+        public enum AnimationsMode
+        {
+            Male,
+            Female,
+            None
+        }
+        public AnimationsMode Animations;
+        public bool ScaleIPD;
+        public enum LipSyncMode
+        {
+            Default,
+            JawFlapBone,
+            JawFlapBlendShape,
+            VismeBlendShape,
+            VisemeParameterOnly
+        }
+        public LipSyncMode lipSync;
+        public Transform lipSyncJawBone;
+        // 現状、lipSyncJawClosed と lipSyncJawOpen はなぜか正常に値を拾えません。
+        public Quaternion lipSyncJawClosed;
+        public Quaternion lipSyncJawOpen;
+        public SkinnedMeshRenderer VisemeSkinnedMesh;
+        public string MouthOpenBlendShapeName;
+        public string[] VisemeBlendShapes; // = new string[15];
+        public string unityVersion;
+        public Vector3 portraitCameraPositionOffset;
+        public Quaternion portraitCameraRotationOffset;
+        public AnimatorOverrideController CustomStandingAnims;
+        public AnimatorOverrideController CustomSittingAnims;
+
+        void OnGUI() { } // コンポーネントの有効化/無効化チェックボックスがほしかっただけなので何もない。
+    }
+}
+
+#endif

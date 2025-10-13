@@ -1,0 +1,14 @@
+{
+    "name": "VRC_AvatarDescriptor",
+    "rootNamespace": "VRCSDK2",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
