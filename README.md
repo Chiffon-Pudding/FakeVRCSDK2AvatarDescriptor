@@ -43,14 +43,22 @@ using System.Collections.Generic;
 
 ### Missing なコンポーネントを残さないでください。
 Missing なコンポーネントが一つでも残っていると "VRCAvatars3Tools" での移行がうまくいかない可能性が高まります。  
-しかし、このパッケージが偽装できるのは "VRC_AvatarDescriptor" のみです。  
-それ以外については別途本物を用意しておくか、偽装するか、あるいは単純に Missing なコンポーネントを削除してください。  
-"Dynamic Bone" の場合は anatawa12氏 制作の "anatawa12's gists pack" に含まれる "FakeDynamicBoneComponents" 等で偽装可能です。  
+しかし、このパッケージが偽装できるのは VRChat SDK2 用の "VRC_AvatarDescriptor" のみです。  
+それ以外については別途本物を用意しておくか、偽装するか、あるいは単純に Missing なコンポーネントを削除してください。
+
+Missing なコンポーネントの問題ですが、ほとんどの場合は "Dynamic Bone" を導入すれば解決すると思われます。  
+二脚歩行でない等の特殊なアバターの場合、さらに "Final IK" を利用している場合が考えられます。  
+いずれも Unity Assets Store で購入可能です。必要に応じて購入し、Unityのパッケージマネージャから導入してください。  
+Will Hong氏 制作の "Dynamic Bone":  
+https://assetstore.unity.com/packages/tools/animation/dynamic-bone-16743?locale=ja-JP  
+RootMotion氏 制作の "Final IK":  
+https://assetstore.unity.com/packages/tools/animation/final-ik-14290?locale=ja-JP  
+これら2種類以外に依存しているアバターは稀なはずですが、必要なものがわかっている場合は別途導入するか Missing なコンポーネントを削除して対応してください。
+
+なお "Dynamic Bone" に関しては anatawa12氏 制作の "anatawa12's gists pack" パッケージに含まれる "FakeDynamicBoneComponents" 等で偽装してしまうことも可能です。  
+この場合は本物を購入・導入していない場合でも削除せずに移行が可能になります。  
 必要に応じて以下から VPM リポジトリを追加し、VCC/ALCOM からパッケージを導入してください。  
-https://vpm.anatawa12.com/add-repo  
-他、アバターによっては RootMotion氏 制作の "Final IK" や、他のアセットも必要になるかもしれませんが、これらは本物が必要になるかと思います。  
-"Final IK" については以下から購入可能です。  
-https://assetstore.unity.com/packages/tools/animation/final-ik-14290?locale=ja-JP
+https://vpm.anatawa12.com/add-repo
 
 ## 仕様
 SDK2 の "VRC_AvatarDescriptor" は実態が dll であり、  
