@@ -9,6 +9,9 @@ CC0-1.0
 http://creativecommons.org/publicdomain/zero/1.0/deed.ja
 
 ## 使い方
+このパッケージはデフォルトでは com.vrchat.avatars に依存しています。  
+VRChat SDK3 のアバター用に設定されたプロジェクトでご利用ください。
+
 このパッケージをインポートしてください。  
 SDK2 の VRCSDK2 VRC_AvatarDescriptor が付与されているオブジェクトは自動的に中が見えるようになります。  
 他の Missing なコンポーネント全てをなんとかした後、"VRCAvatars3Tools" 等で SDK3 に移行してください。  
