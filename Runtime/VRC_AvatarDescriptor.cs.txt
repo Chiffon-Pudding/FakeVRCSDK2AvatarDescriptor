@@ -11,7 +11,7 @@
  *
  */
 
-#if !VRC_SDK_VRCSDK2
+#if !VRC_SDK_VRCSDK2 // SDK2があるときは何もしない。これはdllビルド時に処理されるため、dllビルド時点の環境に左右されてしまうことに注意。
 
 using UnityEngine;
 using System;
@@ -23,9 +23,13 @@ namespace VRCSDK2
     /// </summary>
     [DisallowMultipleComponent]
     [Serializable]
+#if VRC_SDK_VRCSDK3 // SDK3があるときはビルド時にエラーを出さないようにする。これはdllビルド時に処理されるため、dllビルド時点の環境に左右されてしまうことに注意。
+    public class VRC_AvatarDescriptor : MonoBehaviour, VRC.SDKBase.IEditorOnly
+#else
     public class VRC_AvatarDescriptor : MonoBehaviour
+#endif
     {
-        public string Name;
+    public string Name;
         public Vector3 ViewPosition;
         public enum AnimationsMode
         {
@@ -56,8 +60,6 @@ namespace VRCSDK2
         public Quaternion portraitCameraRotationOffset;
         public AnimatorOverrideController CustomStandingAnims;
         public AnimatorOverrideController CustomSittingAnims;
-
-        void OnGUI() { } // コンポーネントの有効化/無効化チェックボックスがほしかっただけなので何もない。
     }
 }
 
