@@ -12,7 +12,7 @@
   "gitDependencies": {},
   "vpmDependencies": {
     "com.vrchat.avatars": ">=3.5.0"
-  }
+  },
   "license": "CC0-1.0",
   "legacyFolders": {},
   "legacyFiles": {},
