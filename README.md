@@ -9,7 +9,7 @@ CC0-1.0
 http://creativecommons.org/publicdomain/zero/1.0/deed.ja
 
 ## 使い方
-このパッケージはデフォルトでは com.vrchat.avatars に依存しています。  
+このパッケージはデフォルトでは "VRChat SDK - Avatars"(com.vrchat.avatars) に依存しています。  
 VRChat SDK3 のアバター用に設定されたプロジェクトでご利用ください。
 
 このパッケージをインポートしてください。  
@@ -67,7 +67,7 @@ FileID と guid が一致したことにより、偽装が成立します。
 この Unity の仕様の関係上、VRC_AvatarDescriptor の Runtime 側は必然的に バイナリ(dll) でのご提供となります。
 
 ### dll のビルド
-VRChat SDK - Avatars が存在しない環境でもビルドは可能なはずですが、存在する環境でのビルドを推奨します。  
+"VRChat SDK - Avatars"(com.vrchat.avatars) が存在しない環境でもビルドは可能なはずですが、存在する環境でのビルドを推奨します。  
 これにより VRChatSDK の非対応コンポーネントのエラー表示を非表示に出来るようになります。
 
 以下の手順は  
