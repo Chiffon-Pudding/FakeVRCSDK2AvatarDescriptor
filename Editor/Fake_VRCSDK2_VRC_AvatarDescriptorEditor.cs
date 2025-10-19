@@ -19,7 +19,7 @@ using System;
 
 namespace VRCSDK2
 {
-    [CustomEditor(typeof(VRCSDK2.VRC_AvatarDescriptor))]
+    [CustomEditor(typeof(VRC_AvatarDescriptor))]
     public class Fake_VRCSDK2_VRC_AvatarDescriptorEditor : Editor
     {
         private enum VisemeBlendshapeNames
@@ -52,7 +52,7 @@ namespace VRCSDK2
             if (sdk2Vad.GetComponent<VRC.SDK3.Avatars.Components.VRCAvatarDescriptor>())
             {
                 EditorGUILayout.HelpBox("SDK3 VRC Avatar Descriptor found. This Component can be delete.\nThe following are read-only and should be used as a reference", MessageType.Info);
-                Vector3 roViewPoint = EditorGUILayout.Vector3Field("ViewPosition", sdk2Vad.ViewPosition); // 移行時に "VRCAvatars3Tools" が値を読み込めなかった場合に備えて読込専用で表示。
+                // Vector3 roViewPoint = EditorGUILayout.Vector3Field("ViewPosition", sdk2Vad.ViewPosition); // 移行時に "VRCAvatars3Tools" が値を読み込めなかった場合に表示すると親切？
                 // bool roScaleIPD = EditorGUILayout.Toggle("Scale IPD", sdk2Vad.ScaleIPD); // 移行時に表示されるけど、移行先にはデバッグインスペクタにしか無い？
                 EditorGUILayout.LabelField("Unity Version", sdk2Vad.unityVersion); // おまけで表示。称号代わりにでも。
                 sdk2Vad.enabled = false;
