@@ -64,9 +64,13 @@ FileID と guid が一致したことにより、偽装が成立します。
 この Unity の仕様の関係上、VRC_AvatarDescriptor の Runtime 側は必然的に バイナリ(dll) でのご提供となります。
 
 ### dll のビルド
+VRChat SDK - Avatars が存在しない環境でもビルドは可能なはずですが、存在する環境でのビルドを推奨します。  
+これにより VRChatSDK の非対応コンポーネントのエラー表示を非表示に出来るようになります。
+
 以下の手順は  
 /Assets/FakeVRCSDK2AvatarDescriptor/  
-に展開している場合です。UPM等で導入されている場合等、別の場所に展開されている場合は適宜読み替えてください。  
+に展開している場合です。UPM等で導入されている場合等、別の場所に展開されている場合は適宜読み替えてください。
+
 Unity にこのパッケージが導入されている時、 dll のソースコードは以下に格納されています。  
 /Assets/FakeVRCSDK2AvatarDescriptor/Runtime/VRC_AvatarDescriptor.cs.txt  
 同じネームスペースとクラスが含まれる .dll と .cs は共存できないため、意図的に拡張子に .txt を付与しています。
