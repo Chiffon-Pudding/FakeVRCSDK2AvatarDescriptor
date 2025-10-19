@@ -11,8 +11,8 @@
   "description": "The Fake of VRChat SDK2 VRC_AvatarDescriptor.",
   "gitDependencies": {},
   "vpmDependencies": {
-    "com.vrchat.avatars",
-  },
+    "com.vrchat.avatars": ">=3.5.0"
+  }
   "license": "CC0-1.0",
   "legacyFolders": {},
   "legacyFiles": {},
