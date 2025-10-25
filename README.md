@@ -60,8 +60,8 @@ https://assetstore.unity.com/packages/tools/animation/final-ik-14290?locale=ja-J
 必要に応じて以下から VPM リポジトリを追加し、VCC/ALCOM からパッケージを導入してください。  
 https://vpm.anatawa12.com/add-repo
 
-"Final IK" も同様に VRLabs氏 制作の "Final IK Stub" を導入することで代替とすることが可能なようです。こちらについては私はテストできていません。
-必要に応じて以下から VPM リポジトリを追加し、VCC/ALCOM からパッケージを導入してください。
+"Final IK" も同様に VRLabs氏 制作の "Final IK Stub" を導入することで代替とすることが可能なようです。こちらについては私はテストできていません。  
+必要に応じて以下から VPM リポジトリを追加し、VCC/ALCOM からパッケージを導入してください。  
 vcc://vpm/addRepo?url=https://api.vrlabs.dev/listings/category/essentials
 
 ## 仕様
